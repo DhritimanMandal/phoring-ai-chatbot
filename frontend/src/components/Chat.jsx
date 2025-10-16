@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { io } from "socket.io-client";
 import MessageBubble from "./MessageBubble";
 
-const socket = io("http://localhost:3000", {
+const socket = io("https://phoring-ai-chatbot-backend.onrender.com", {
   transports: ["websocket"],
   withCredentials: true,
 });
